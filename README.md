@@ -8,12 +8,12 @@ Clone the repo.
 
 ```bash
 git clone https://github.com/AdamKearn/system-mileage
+cd system-mileage
 ```
 
 ## Install the other bits
 
 ```bash
-npm init
 npm install --save-dev electron
 npm start
 ```
