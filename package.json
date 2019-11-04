@@ -1,0 +1,24 @@
+{
+  "name": "mileage",
+  "version": "0.1.0",
+  "description": "A system uptime counter.  Cuz why not?",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdamKearn/Mileage.git"
+  },
+  "author": "Adam Kearn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdamKearn/Mileage/issues"
+  },
+  "homepage": "https://github.com/AdamKearn/Mileage#readme",
+  "devDependencies": {
+    "electron": "^7.0.1"
+  },
+  "dependencies": {}
+}

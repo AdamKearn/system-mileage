@@ -1,0 +1,15 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  color: #FFF;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+
+.main .usage {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 15vw;
+}
