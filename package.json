@@ -1,24 +1,15 @@
 {
-  "name": "mileage",
-  "version": "0.1.0",
-  "description": "A system uptime counter.  Cuz why not?",
-  "main": "index.js",
+  "name": "system-mileage",
+  "version": "0.2.0",
+  "description": "",
+  "main": "server.js",
   "scripts": {
-    "test": "test",
-    "start": "electron ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AdamKearn/Mileage.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "Adam Kearn",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AdamKearn/Mileage/issues"
-  },
-  "homepage": "https://github.com/AdamKearn/Mileage#readme",
-  "devDependencies": {
-    "electron": "^7.0.1"
-  },
-  "dependencies": {}
+  "dependencies": {
+    "node-powershell": "^4.0.0"
+  }
 }
