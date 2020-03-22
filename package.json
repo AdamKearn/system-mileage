@@ -1,6 +1,6 @@
 {
   "name": "system-mileage",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "",
   "main": "src/server.js",
   "scripts": {
@@ -10,6 +10,7 @@
   "author": "Adam Kearn",
   "license": "ISC",
   "dependencies": {
-    "node-powershell": "^4.0.0"
+    "node-powershell": "^4.0.0",
+    "xmlbuilder2": "^1.7.0"
   }
 }
