@@ -1,4 +1,5 @@
 const { create } = require('xmlbuilder2');
+const fs = require('fs');
 
 const root = create({ version: '1.0', encoding: 'UTF-16' })
   .ele('Task',
@@ -62,6 +63,14 @@ const root = create({ version: '1.0', encoding: 'UTF-16' })
     .up()
   .up();
 
-// convert the XML tree to string
+// Take the XML object and save it to local storage.
 const xml = root.end({ prettyPrint: true });
-console.log(xml);
+
+fs.writeFileSync(
+  'C:\\log\\nodejs_test_xml.xml',
+  '\ufeff' + xml,   // Append the Utf-16le BOM and the XML object.
+  {
+    encoding:'utf16le',
+    flag:'w'
+  }
+);
