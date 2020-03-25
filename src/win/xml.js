@@ -1,11 +1,17 @@
 const { create } = require('xmlbuilder2');
 
 const root = create({ version: '1.0', encoding: 'UTF-16' })
-  .ele('Task', { version: '1.4', xmlns: 'http://schemas.microsoft.com/windows/2004/02/mit/task' })
+  .ele('Task',
+    {
+      version: '1.4',
+      xmlns: 'http://schemas.microsoft.com/windows/2004/02/mit/task'
+    })
+
     .ele('RegistrationInfo')
       .ele('Date').txt('2020-03-07T17:16:13.8971978').up()
       .ele('Author').txt('github.com/AdamKearn/system-mileage').up()
-      .ele('Description').txt('This task is apart of the system-mileage application. This will detect if the user/system sends a logout request.').up()
+      .ele('Description')
+        .txt('Detect if the user/system sends a logout request.').up()
       .ele('URI').txt('\\sys-mil-test-lock').up()
     .up()
 
@@ -49,7 +55,9 @@ const root = create({ version: '1.0', encoding: 'UTF-16' })
     .ele('Actions', { Context: 'Author' })
       .ele('Exec')
         .ele('Command').txt('C:\\Windows\\System32\\cmd.exe').up()
-        .ele('Arguments').txt('/c ECHO [4647]:%DATE% %TIME%>>"C:\\log\\json-log-test.log"').up()
+        .ele('Arguments')
+          .txt('/c ECHO [4647]:%DATE% %TIME%>>"C:\\log\\json-log-test.log"')
+        .up()
       .up()
     .up()
   .up();
